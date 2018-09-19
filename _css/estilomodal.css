@@ -1,0 +1,152 @@
+﻿@charset "utf-8";
+
+/*------------------------------Cronograma----------------------------------*/
+.cronograma{
+	width: 100%;
+	position: relative;
+}
+
+/*------------------------------Palestras----------------------------------*/
+.mod_pal{
+	position: relative;
+	width: 1000px;
+	height: 564px;
+}
+
+.log_pal{
+	position: relative;
+	width: 480px; /*500*/
+	height: 160px; /*175*/
+	margin: 5px;
+}
+
+.dpal{
+	position: relative;
+	left: 490px;
+	height: 265px;
+	width: 455px;
+	top: -345px;
+	margin: 5px;
+	text-align: center;
+	padding: 20px;
+	padding-top: 50px;
+	font-size: 20pt;
+	font-family: Qotho;
+}
+
+.det{
+	position: relative;
+	height: 125px;
+	width: 430px;
+	margin: 10px;
+	border: dashed 2px black;
+	padding: 20px;
+	text-align: center;
+	font-size: 20pt;
+	font-family: Qotho;
+}
+
+/*informações sobre o palestrante*/
+.info_pal{
+	top: -345px;
+	position: relative;
+	height: 160px;
+	margin: 10px;
+	padding: 17px;
+	font-size: 14pt;
+	font-family: Qotho;
+	text-align: left;
+	padding-left: 220px;
+	border: solid gray 3px;
+	text-indent: 30px;
+}
+
+.nome_pal{
+	text-indent: 0px;
+	font-size: 19pt;
+	text-height: bold;
+}
+
+img.fot_pal{
+	position: absolute;
+	top: 6px;
+	width: 150px;
+	left: 30px;
+	height: 180px;
+	border: 1px solid gray;
+}
+
+/*---------------------------Visitas técnicas---------------------------*/
+.logo{
+	position: relative;
+	top: 0px;
+	width: 480px; /*500*/
+	height: 160px; /*175*/
+	margin: 5px;
+}
+
+.desc{
+	position: relative;
+	left: 490px;
+	width: 460px;
+	top: -559px;
+	margin: 5px;
+	text-align: center;
+	padding: 20px;
+	font-size: 18pt;
+	font-family: Qotho;
+	height: 484px;
+	padding-top: 50px;
+}
+
+.imagem{
+	position: relative;
+	height: 389px;
+	width: 480px;
+	margin: 5px;
+	text-align: center;
+}
+
+
+/*-----------------------------------Conteúdos Adicionais-------------------------------------*/
+.logo_add{
+	position: relative;
+	height: 200px;
+	margin: 10px;
+}
+
+.desc_add{
+	position: relative;
+	height: 294px;
+	margin: 10px;
+	padding: 20px;
+	font-size: 18pt;
+	font-family: Qotho;
+	border-top: dashed black 2px;
+}
+
+
+/*-----------------------------------Termos-------------------------------------*/
+.titulo{
+	position: relative;
+	width: 990px;
+	height: 40px;
+	margin: 5px;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20pt;
+	font-weight: bold;
+	font-family: Qotho;
+	border-bottom: 2px dashed black;
+}
+
+.termo{
+	position: relative;
+	width: 470px;
+	margin: 5px;
+	height: 479px;
+	text-align: left;
+	padding: 10px;
+	font-size: 16pt;
+	font-family: Qotho;
+}
