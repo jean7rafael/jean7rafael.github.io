@@ -1,0 +1,64 @@
+﻿@charset "utf-8";
+@font-family{ Setor de Tecnologia;
+src: url('font/Setor de Tecnologia.ttf');
+}
+body {
+	margin: auto;
+	font-family: humanst521 lt bt;
+	width: 1000px;
+}
+h1, h2, h3, h4, h5, h6{
+	cursor: default;
+}
+a{
+	text-decoration: none;
+}
+/* ************************************* ARQUITETURA *********************************** */
+/* ************************************** AMBIENTAL ************************************ */
+/* ************************************ BIOPROCESSOS *********************************** */
+/* **************************************** CIVIL ************************************** */
+/* ************************************** ELÉTRICA ************************************* */
+.logo{
+	width: 1000px;
+	height: 175px;
+	background-color: #F0F0F0;
+}
+.logo img{
+	width: 500px;
+	position: relative;
+	left: 50%;
+	margin-left: -250px;
+}
+#cima{
+	height: 238px;
+	background-color: #F0F0F0;
+}
+#baixo{
+	height: 150px;
+	background-color: #F0F0F0;
+}
+.centro{
+	width: 334px;
+	position: absolute;
+	margin-left: 333px;
+}
+.esquerda{
+	width: 333px;
+	position: relative;
+	float: left;
+}
+.direita{
+	width: 333px;
+	position: relative;
+	float: right;
+}
+.esquerda img, .centro img, .direita img{
+	position: absolute;
+	transition: opacity .1s ease-in-out;
+}
+.esquerda img.bottom:hover, .centro img.bottom:hover, .direita img.bottom:hover{
+	opacity: 0;
+}
+/* ************************************** MECÂNICA ************************************* */
+/* ************************************** PRODUÇÃO ************************************* */
+/* *************************************** QUÍMICA ************************************* */

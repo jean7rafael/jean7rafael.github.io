@@ -1,0 +1,402 @@
+﻿@charset "utf-8";
+@font-family{ Setor de Tecnologia;
+src: url('font/Setor de Tecnologia.ttf');
+}
+body {
+	width: 1366px;
+	margin: auto;
+	font-family: humanst521 lt bt;
+}
+h1, h2, h3, h4, h5, h6{
+	cursor: default;
+}
+a{
+	text-decoration: none;
+}
+/* *************************************** HEADER ************************************** */
+#logo {
+	width: 295px;
+	height: 165px;
+	position: absolute;
+	left: 50%;
+	margin-left: -147px;
+	margin-top: 200px;
+	z-index: 200;
+}
+#slogan{
+	color: white;
+	font-size: 30px;
+	text-shadow: 1px 1px black;
+	position: absolute;
+	left: 50%;
+	margin-left: -177px;
+	margin-top: 355px;
+	z-index: 200;
+}
+/* *************************************** MENU **************************************** */
+nav {
+	width: 1366px;
+	height: 53px;
+	background-color: #808080;	
+}
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+	width: 175px;
+	height: 13px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	font-size: 22px;
+	color: white;
+	position: relative;
+}
+.maior{
+	width:300px;
+}
+.maior ul li{
+	width:290px;
+}
+nav li:hover { 
+    background-color: #4D4D4D;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav li ul{
+	position: absolute;
+	left: 0px;
+	top: 53px;
+	display: none;
+}
+nav li ul li{
+	display: block;
+	background-color: #4D4D4D;
+	text-align: left;
+	padding-left: 10px;
+	width: 165px;
+	font-size: 20px;
+	border-top: 1px solid #808080;
+	z-index: 100;
+}
+nav li ul li:hover{
+	background-color: #808080;
+}
+nav li:hover ul, nav li.over ul{
+	display:block;
+}
+/* *************************************** ASIDE *************************************** */
+#leftside{
+	float: left;
+	width: 340px;
+}
+#rightside{
+	float: right;
+	width: 340px;
+}
+.topobarra{
+	height: 53px;
+	background-color: #0000C0;
+}
+.topobarra h4{
+	padding-top: 18px;
+	padding-left: 21px;
+	font-size: 24px;
+	color: white;
+}
+.restobarra{
+	height: 1623px;
+	background-color: #E6E6E6;
+}
+#acessos{
+	height: 53px;
+	position: absolute;
+	margin-top: -42px;
+	margin-left: 132px;
+}
+#acessos img {
+    display: inline-block;
+	width: 44px;
+	height: 53px;
+	margin-left: -8px;
+}
+#acessos img:hover {
+ 	background-color: #000080;
+}
+.ladogeral{
+	margin-bottom: 50px;
+}
+.ladogeral h3{
+	color: black;
+	font-family: Setor de Tecnologia;
+	font-size: 24px;
+	padding-top: 18px;
+	padding-left: 21px;
+	margin-bottom: 10px;
+}
+.lado li {
+	display: block;
+	height: 33px;
+	font-size: 20px;
+	margin-bottom: -20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	}
+.lado a {
+    color: #808080;
+    text-decoration: none;
+}
+.lado img{
+	width: 320px;
+	margin-left: 10px;
+	margin-bottom: -5px;
+}
+.lado li:hover {
+    background-color: #808080;
+	color: white;
+}
+.ladob img{
+	height: 71px;
+	width: 71px;
+	margin-right: -5px;
+	margin-bottom: -6px;
+	background-color: #F3F3F3;
+}
+.ladob{
+	width: 223px;
+	margin-top: 20px;
+	margin-left: 69px;
+}
+.ladob img:hover{
+	background-color: #808080;	
+}
+/* *************************************** MODAL *************************************** */
+#modal{
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	display: none;
+	z-index: 300;
+}
+.modal-box{
+	background-color: white;
+	width: 1000px;
+	height: 564px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -500px;
+	margin-top: -282px;
+}
+.fechar{
+	width: 52px;
+	height: 35px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+}
+.fechar p{
+	color: red;
+	font-family: humanst521 lt bt;
+	padding: 10px 20px; 
+}
+.fechar:hover{
+	background-color: red;
+}
+.fechar p:hover{
+	color: white; 
+}
+/* ************************************** CONTEÚDO ************************************* */
+section {
+	margin-left: 340px;
+	width: 686px;
+}
+#centrotopo{
+	height: 53px;
+}
+#centrotopo  h3{
+	font-family: Setor de Tecnologia;
+	text-align: right;
+	padding-top: 12px;
+	margin-right: 580px;
+}
+#centrotopo  h4{
+	font-size: 20px;
+	margin-top: -25px;
+	margin-left: 127px;
+	color: #808080;
+}
+#grandeimage, #grandeimagenoticia{
+	height: 329px;	
+}
+#grandeimagenoticia img{
+	width: 576px;
+	margin-left: 55px;	
+	margin-top: 22px;
+}
+#grandetexto{
+	height: 183px;
+	width: 576px;
+	text-align: justify;
+	margin-left: 55px;
+}
+#grandetexto h4{
+	color: #808080;
+	font-size: 20px;
+	padding-top:20px;
+}
+#grandetexto h2{
+	color: black;
+	font-family: Setor de Tecnologia;
+	font-size: 24px;
+	line-height: 25px;
+	padding-top: 20px;
+}
+#grandetexto h3{
+	color: #808080;
+	font-size: 20px;
+	line-height: 20px;
+	padding-top: 20px;
+}
+#grandetexto img{
+	margin-left: -55px;
+} 
+#restomeio{
+	width: 686px;
+}
+#borda{
+	width: 686px;
+}
+.meioesquerda{
+	position: relative;
+	float: left;
+	height: 336px;
+	width: 343px;
+	margin-bottom: -15px;
+}
+.meiodireita{
+	position: relative;
+	float: right;
+	height: 336px;
+	width: 343px;
+	margin-bottom: -15px;
+}
+.meiodireita h4, .meioesquerda h4{
+	color: #808080;
+	font-size: 18px;
+	padding-top:15px;
+	text-align: justify;
+}
+.meiodireita h2, .meioesquerda h2{
+	color: black;
+	font-family: Setor de Tecnologia;
+	font-size: 16px;
+	line-height: 15px;
+	padding-top: 15px;
+	text-align: justify;
+}
+.meiodireita h3, .meioesquerda h3{
+	color: #808080;
+	font-size: 16px;
+	line-height: 20px;
+	padding-top: 15px;
+	text-align: justify;
+}
+.meiodireita img:hover, .meioesquerda img:hover{
+	opacity:.50;
+}
+.meiodireita h2:hover, .meioesquerda h2:hover{
+	color: #0000C0;
+}
+#imagenoticiadireita, #imagenoticiaesquerda{
+	height: 130px;
+	width: 245px;
+	margin-top: 22px;
+}
+#imagenoticiadireita, .meiodireita h4, .meiodireita h2, .meiodireita h3{
+	margin-left: 33px;
+	margin-right: 65px;
+}
+#imagenoticiaesquerda, .meioesquerda h4, .meioesquerda h2, .meioesquerda h3{
+	margin-left: 65px;
+	margin-right: 33px;
+}
+/* *************************************** PÁGINAS ************************************* */
+#pagenavi{
+	height: 100px;
+}
+#pagenavi img{
+	position: absolute;
+	left: 50%;
+	margin-top: 15px;
+	margin-left: -54px;
+}
+#pagenavi h5{
+	position: absolute;
+	left: 50%;
+	margin-top: 14px;
+	margin-left: -34px;
+	color: #808080;
+}
+#pagenavi ul{
+	position: absolute;
+	width: 250px;
+	margin-top: 50px;
+	margin-left: -125px;
+	left: 50%;
+	text-align: center;
+}
+#pagenavi a{
+	display: inline-block;
+	color: #808080;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	margin: 0 3.5px;
+}
+#pagenavi a:hover{
+	color: #0000C0;
+}
+/* *************************************** FOOTER ************************************** */
+#baixoe{
+	float: left;
+	width: 643px;
+	height: 142px;
+	background-color: #808080;
+}
+#baixoc {
+	margin-left: 643px;
+	width: 80px;
+	height: 142px;
+	background-color: #808080;
+}
+#baixoc img{
+	height: 53px;
+}
+#baixoc img:hover{
+	background-color: #0000C0;
+}
+#baixod{
+	float: right;
+	margin-top: -142px;
+	width: 643px;
+	height: 142px;
+	background-color: #808080;
+}
+#baixoe img{
+	padding-top: 10px;
+	padding-left: 20px;
+}
+.textobaixo{
+	color: white;
+	padding-left: 212px;
+	margin-top: -90px;
+	line-height: 20px;
+}

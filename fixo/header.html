@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<!-- *************************************** MODAL *************************************** -->
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+		$(document).ready(function(e) {
+			$('.btn_modal').click(function(event){
+				event.preventDefault();
+				$('#modal').fadeIn(500);
+				var url = $(this).attr('href');
+				$('.modal-box-conteudo').load("modais.html "+url);
+			});
+			$('#modal').click(function(event){
+				if(event.target !== this){
+					return;
+				}
+				$('#modal').fadeOut(500);
+			});
+			$('.fechar').click(function(){
+				$('#modal').fadeOut(500);
+			});
+		});
+	</script>
+	<!-- **************************** HEADER slider (pasta fixo) ***************************** -->
+	<link rel="stylesheet" type="text/css" href="fixo/engine2/style.css" />
+	<script type="text/javascript" src="fixo/engine2/jquery.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>
+			<img id="logo" src="fixo/data2/images/logotec.png" alt="Setor de Tecnologia">
+		</h1>
+		<h2 id="slogan">	
+			Crescer com Responsabilidade.
+		</h2>
+		<div id="topo">
+			<div id="wowslider-container2">
+			<div class="ws_images"><ul>
+					<li><img src="fixo/data2/images/topsite1.png" id="wows1_0"/></li>
+					<li><img src="fixo/data2/images/topsite2.png" id="wows1_1"/></li>
+					<li><img src="fixo/data2/images/topsite3.png" id="wows1_2"/></li>
+					<li><img src="fixo/data2/images/topsite4.png" id="wows1_3"/></li>
+					<li><img src="fixo/data2/images/topsite5.png" id="wows1_4"/></li>
+				</ul></div>
+			<div class="ws_script" style="position:absolute;left:-99%"></div>
+			<div class="ws_shadow"></div>
+			</div>
+		</div>
+			<script type="text/javascript" src="fixo/engine2/wowslider.js"></script>
+			<script type="text/javascript" src="fixo/engine2/script.js"></script>
+	</header>
+	<nav>
+		<ul>
+				<a href="teste.html" target="_self"><li>Home</li></a>
+				<li><h3>Sobre o Setor</h3>
+					<ul>
+						<a href="historia.html" target="_blank"><li>História</li></a>
+						<a href="fale_com_a_direcao.html" target="_blank"><li>Pessoal</li></a>
+					</ul>
+				</li>
+				<li class="maior"><h3>Unidades Administrativas</h3>
+					<ul> 
+						<a href="#arquitetura" class="btn_modal" target="_blank"><li>Arquitetura e Urbanismo</li></a>
+						<a href="#ambiental" class="btn_modal" target="_blank"><li>Engenharia Ambiental</li></a> 
+						<a href="#bioprocessos" class="btn_modal" target="_blank"><li>Engenharia de Bioprocessos</li></a>
+						<a href="#civil" class="btn_modal" target="_blank"><li>Engenharia Civil</li></a>
+						<a href="#eletrica" class="btn_modal" target="_blank"><li>Engenharia Elétrica</li></a> 
+						<a href="#mecanica" class="btn_modal" target="_blank"><li>Engenharia Mecânica</li></a>
+						<a href="#producao" class="btn_modal" target="_blank"><li>Engenharia de Produção</li></a> 
+						<a href="#quimica" class="btn_modal" target="_blank"><li>Engenharia Química</li></a>
+					</ul>
+				</li>
+				<!--<li><h3>Pós-Graduação</h3>
+					<ul>
+						<a href="http://www.cau.ufpr.br/portal/" title="Planejamento Urbano" target="_blank"><li>PPU</li></a>
+						<a href="http://dodo.lemma.ufpr.br/doku.php" title="Engenharia Ambiental" target="_blank"><li>PPGA</li></a> 
+						<a href="http://www.bioprocessos.net.br/" title="Engenharia de Bioprocessos e Biotecnologia" target="_blank"><li>PPGEBB</li></a>
+						<a href="http://www.prppg.ufpr.br/ppgcc/" title="Construção Civil" target="_blank"><li>PPGCC</li></a>
+						<a href="http://www.eletrica.ufpr.br/p/mestrado:inicial" title="Engenharia Elétrica" target="_blank"><li>PPGEE</li></a> 
+						<a href="http://www.pgmec.ufpr.br/" title="Engenharia Mecânica" target="_blank"><li>PGMEC</li></a>
+						<a href="http://www.novo.ppgep.ufpr.br/site/" title="Engenharia de Produção" target="_blank"><li>PPGEP</li></a> 
+						<a href="http://www.novo.ppgep.ufpr.br/site/" title="Engenharia Química" target="_blank"><li>PPGEQ</li></a>
+						<a href="http://www.posalim.ufpr.br/" title="Engenharia de Alimentos" target="_blank"><li>PPGEAL</li></a>
+						<a href="http://www.ppgmaui.ufpr.br/" title="Meio Ambiente Urbano e Industrial" target="_blank"><li>PPGMAUI</li></a>
+						<a href="http://www.ppgerha.ufpr.br/" title="Engenharia de Recursos Hídricos e Ambiental" target="_blank"><li>PPGERHA</li></a>
+						<a href="http://www.pipe.ufpr.br/portal/" title="Engenharia e Ciência dos Materiais" target="_blank"><li>PIPE</li></a>
+						<a href="http://www.ppgmne.ufpr.br/" title="Métodos Numéricos em Engenharia" target="_blank"><li>PPGMNE</li></a>
+					</ul>
+				</li>-->
+				<li><h3>Orgãos Auxiliares</h3>
+					<ul>
+						<a href="http://www.cesec.ufpr.br/" target="_blank"><li>CESEC</li></a>
+						<a href="https://ciegufpr.wordpress.com/" target="_blank"><li>CIEG</li></a> 
+						<a href="http://www.ceppa.ufpr.br/" target="_blank"><li>CEPPA</li></a>
+						<a href="http://www.itti.org.br/portal/" target="_blank"><li>ITTI</li></a>
+						<a href="http://www.lacaut.ufpr.br/" target="_blank"><li>LACAUT</li></a> 
+						<a href="http://www.institutoslactec.org.br/" target="_blank"><li>LACTEC</li></a>
+						<a href="http://www.prh24.ufpr.br/" target="_blank"><li>PRH24</li></a> 
+					</ul>
+				</li>
+				<a href="Concursos.html" target="_self"><li>Concursos</li></a>
+			</ul>
+	</nav>
+	<div id="modal">
+		<div class="modal-box">
+			<div class="modal-box-conteudo">
+			
+			</div>
+			<div class="fechar">
+				<p>X</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

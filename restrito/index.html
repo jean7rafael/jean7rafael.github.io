@@ -1,0 +1,54 @@
+﻿<?php
+session_start();
+	if(isset($_SESSION['logado'])): ?>
+
+	<!DOCTYPE html>
+	<html>
+	<head lang="pt-br">
+		<title>Setor de Tecnologia UFPR</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Setor de Tecnologia<br />Centro Politécnico, Ed. de Administração, 2º Andar, Curitiba/PR<br />email: direcao@tecnologia.ufpr.br <br />tel: +55(41)3361-3497" />
+		<meta name="keywords" content="setor, tecnologia, ufpr" />
+		<meta name="author" content="Jean Rafael Martins" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/estilo.index.css" />
+	</head>
+
+	<body>
+		<div id="login">
+			<img src="images/background.png"/>
+		</div>
+		<div id="botoes">
+			<ul>
+				<a href="novanoticia.html"><li><img src="images/noticia.png"/></li></a>
+				<a href=""><li><img src="images/evento.png"/></li></a>
+				<a href=""><li><img src="images/concurso.png"/></li></a>
+				<a href=""><li><img src="images/ata.png"/></li></a>
+				<a href=""><li><img src="images/menu.png"/></li></a>
+				<a href=""><li><img src="images/livro.png"/></li></a>
+				<a href=""><li><img src="images/exercicio.png"/></li></a>
+				<a href=""><li><img src="images/paginas.png"/></li></a>
+				<a href=""><li><img src="images/vazio.png"/></li></a>
+				<a href=""><li><img src="images/lateral.png"/></li></a>
+			</ul>
+		</div>
+	</body>
+	</html>
+
+<?php else: ?>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Egressos da UFPR</title>
+		<link rel="stylesheet" href="css/style.css">
+        <script src="js/bootstrap.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	</head>
+	<body>
+		<h1>Acesso restrito, faça o login antes de continuar.</h1>
+	</body>
+	
+</html>
+<?php endif; ?>
+

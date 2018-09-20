@@ -1,0 +1,84 @@
+﻿@charset "utf-8";
+@font-family{ Setor de Tecnologia;
+src: url('font/Setor de Tecnologia.ttf');
+}
+body {
+	margin: auto;
+	font-family: humanst521 lt bt;
+	overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+	cursor: default;
+}
+a{ 
+	text-decoration: none;
+}
+/* **************************************** LOGIN ************************************** */
+#login{
+	z-index: 100;
+}
+#login img{
+	top: 0;
+	width: 100%;
+}
+#login h1{
+	font-size: 57px;
+	color: white;
+	text-align: center;
+	margin-top: -22%;
+}
+#login #box{
+	width: 530px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	margin-left: -265px;
+	font-size: 40px;
+	color: #0000C0;
+	border: none;
+}
+#login #enviar{
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	left: 50%;
+	margin-left: 213px;
+	font-size: 30px;
+	color: white;
+	background-color: #00066D;
+	border: 1px solid white;
+	font-family: humanst521 lt bt;
+	cursor: pointer;
+}
+#login #enviar:hover{
+	width: 48px;
+	height: 48px;
+	font-size: 27px;
+	margin-left: 215px;
+	margin-top: 2px;
+}
+/* **************************************** INDEX ************************************** */
+#botoes{
+	width: 1067px;
+	height:420px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -120px;
+	margin-left: -533px;
+	z-index: 200;
+}
+#botoes li{
+	display: inline-block;
+}
+#botoes img{
+	width: 196px;
+	height: 196px;
+	margin: 7px;
+}
+#botoes img:hover{
+	width: 186px;
+	height: 186px;
+	margin: 12px;
+	background-color: rgba(0, 0, 0, .5);
+}

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+    <title>Setor de Tecnologia UFPR</title>
+	<meta charset="utf-8" />
+    <meta name="description" content="Setor de Tecnologia<br />Centro Politécnico, Ed. de Administração, 2º Andar, Curitiba/PR<br />email: direcao@tecnologia.ufpr.br <br />tel: +55(41)3361-3497" />
+    <meta name="keywords" content="setor, tecnologia, ufpr" />
+	<meta name="author" content="Jean Rafael Martins" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/estilomodal.css" />
+	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+	<!-- **************************** SECTION slider (pasta raiz) ***************************** -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- *************************** FOOTER botão rolar para o topo ************************** -->
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<!-- ************************ HEADER e FOOTER em todas as páginas ************************ -->
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+		$(function () {
+			$("#header").load("fixo/header.html");
+			$("#aside").load("fixo/aside.html");
+			$("#footer").load("fixo/footer.html");
+		});
+	</script>
+	<!-- ********************** BODY Bloquear seleção de texto e imagem ********************** -->
+	<script language='JavaScript'> 
+		function bloquear(e){return false} 
+		function desbloquear(){return true} 
+		document.onselectstart=new Function (&quot;return false&quot;) 
+		if (window.sidebar){document.onmousedown=bloquear 
+		document.onclick=desbloquear} 
+	</script>
+</head>
+
+<body onselectstart='return false' >
+	<header>
+		<div id="header"></div>
+	</header>
+	<aside>
+		<div id="aside"></div>
+	</aside>
+	<section> 
+		<div id="centrotopo" >
+			<h3>Setor de<br>Tecnologia</h3>
+			<h4>As últimas novidades você encontra aqui!</h4>
+			<img id="borda" src="images/bordamaior.png" />
+		</div>
+		<div id="grandeimagenoticia" >
+			<img src="data1/images/note1.png" alt="noticia1" title="noticia1"/>
+		</div>	
+		<div id="grandetexto">
+			<h4>20 Mar 2015</h4>
+			<h2>Diretor do Setor de Tecnologia compra carros e beneficia professores e técnicos.</h2>
+			<h3>Nesta semana, o Professor Doutor Horacio Tertuliano Filho, Diretor do Setor de Tecnologia da UFPR, compra 3 carros que serão utilizados...</h3>
+			<img id="borda" src="images/bordamaior.png" />
+		</div>
+		<div id="centrobaixo" >
+		
+		</div>
+	</section>
+	<footer>
+		<div id="footer"></div>
+	</footer>
+</body>
+</html>

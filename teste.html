@@ -6,13 +6,12 @@
     <meta name="description" content="Setor de Tecnologia<br />Centro Politécnico, Ed. de Administração, 2º Andar, Curitiba/PR<br />email: direcao@tecnologia.ufpr.br <br />tel: +55(41)3361-3497" />
     <meta name="keywords" content="setor, tecnologia, ufpr" />
 	<meta name="author" content="Jean Rafael Martins" />
-	<link rel='shortcut icon' href='images/logotec.ico'>
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/estilomodal.css" />
 	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
-	<!-- **************************** SECTION slider (pasta raiz) ***************************** -->
-	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
-	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- ********************************** SECTION slider *********************************** -->
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/gallery.theme.css">
 	<!-- *************************** FOOTER botão rolar para o topo ************************** -->
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<!-- ************************ HEADER e FOOTER em todas as páginas ************************ -->
@@ -21,7 +20,6 @@
 		$(function () {
 			$("#header").load("fixo/header.html");
 			$("#aside").load("fixo/aside.html");
-			$("#pagenavi").load("fixo/pagenavi.html");
 			$("#footer").load("fixo/footer.html");
 		});
 	</script>
@@ -49,36 +47,55 @@
 			<img id="borda" src="images/bordamaior.png" />
 		</div>
 		<div id="grandeimage" >
-			<div id="wowslider-container1">
-				<div class="ws_images">
-					<ul>
-						<li><img src="data1/images/note1.png" alt="noticia1" title="noticia1" id="wows1_0"/></li>
-						<li><img src="data1/images/note2.png" alt="noticia2" title="noticia2" id="wows1_1"/></li>
-						<li><img src="data1/images/note3.png" alt="noticia3" title="noticia3" id="wows1_2"/></li>
-					</ul>
+			<div class="gallery autoplay items-4">
+				<div id="item-1" class="control-operator"></div>
+				<div id="item-2" class="control-operator"></div>
+				<div id="item-3" class="control-operator"></div>
+				<div id="item-4" class="control-operator"></div>
+
+				<figure class="item">
+					<img src="data1/images/note1.png"/>
+					<h4>20 Mar 2015</h4>
+					<h2>Diretor do Setor de Tecnologia compra carros e beneficia professores e técnicos.</h2>
+					<h3>Nesta semana, o Professor Doutor Horacio Tertuliano Filho, Diretor do Setor de Tecnologia da UFPR, compra 3 carros que serão utilizados...</h3>
+				</figure>
+
+				<figure class="item">
+					<img src="data1/images/note2.png"/>
+					<h4>20 Mar 2015</h4>
+					<h2>Diretor do Setor de Tecnologia compra carros e beneficia professores e técnicos.</h2>
+					<h3>Nesta semana, o Professor Doutor Horacio Tertuliano Filho, Diretor do Setor de Tecnologia da UFPR, compra 3 carros que serão utilizados...</h3>
+				</figure>
+
+				<figure class="item">
+					<img src="data1/images/note3.png"/>
+					<h4>20 Mar 2015</h4>
+					<h2>Diretor do Setor de Tecnologia compra carros e beneficia professores e técnicos.</h2>
+					<h3>Nesta semana, o Professor Doutor Horacio Tertuliano Filho, Diretor do Setor de Tecnologia da UFPR, compra 3 carros que serão utilizados...</h3>
+				</figure>
+				
+				<figure class="item">
+					<img src="data1/images/note1.png"/>
+					<h4>20 Mar 2015</h4>
+					<h2>Diretor do Setor de Tecnologia compra carros e beneficia professores e técnicos.</h2>
+					<h3>Nesta semana, o Professor Doutor Horacio Tertuliano Filho, Diretor do Setor de Tecnologia da UFPR, compra 3 carros que serão utilizados...</h3>
+				</figure>
+
+				<div class="controls">
+				  <a href="#item-1" class="control-button"></a>
+				  <a href="#item-2" class="control-button"></a>
+				  <a href="#item-3" class="control-button"></a>
+				  <a href="#item-4" class="control-button"></a>
 				</div>
-				<div class="ws_thumbs">
-					<a href="#" ><img src="data1/tooltips/note1.png" /></a>
-					<a href="#" ><img src="data1/tooltips/note2.png" /></a>
-					<a href="#" ><img src="data1/tooltips/note3.png" /></a>
-				</div>
-				<div class="ws_script" style="position:absolute;left:-99%"></div>
-				<div class="ws_shadow"></div>
-			</div>	
-			<script type="text/javascript" src="engine1/wowslider.js"></script>
-			<script type="text/javascript" src="engine1/script.js"></script>
-		</div>	
-		<div id="grandetexto">
-			<h4>20 Mar 2015</h4>
-			<h2>Diretor do Setor de Tecnologia compra carros e beneficia professores e técnicos.</h2>
-			<h3>Nesta semana, o Professor Doutor Horacio Tertuliano Filho, Diretor do Setor de Tecnologia da UFPR, compra 3 carros que serão utilizados...</h3>
-			<img id="borda" src="images/bordamaior.png" />
+				
+				<img id="borda" src="images/bordamaior.png" />
+		  </div>
 		</div>
-		<div id="restomeio">
+		<div id="restotopo">
 			<div class="meioesquerda">
-				<a href="noticia1.html"><img id="imagenoticiaesquerda" src="images/noticia1.png"/></a>
+				<a href="teste.html"><img id="imagenoticiaesquerda" src="images/noticia1.png"/></a>
 				<h4>20 Mar 2015</h4>
-				<a href="noticia1.html"><h2>Diretor do Setor de Tecnologia compra carros e beneficia...</h2></a>
+				<a href="teste.html"><h2>Diretor do Setor de Tecnologia compra carros e beneficia...</h2></a>
 				<h3>Nesta semana, o Professor Doutor Horacio Tertuliano Filho, Diretor do Setor de Tecnologia da UFPR, compra 3 carros que serão utilizados...</h3>
 			</div>
 			<div class="meiodireita">
@@ -104,7 +121,7 @@
 			</div>
 			<img id="borda" src="images/bordamaior.png" />
 		</div>
-		<div id="borda" id="restomeio">
+		<div id="borda" id="restobaixo">
 			<div class="meioesquerda">
 				<a href="teste.html"><img id="imagenoticiaesquerda" src="images/noticia5.png"/></a>
 				<h4>20 Mar 2015</h4>
@@ -119,9 +136,9 @@
 			</div>
 			<img id="borda" src="images/bordamaior.png" />
 		</div>
+		<div id="centrobaixo" >
 		
-			<div id="pagenavi"></div>
-		
+		</div>
 	</section>
 	<footer>
 		<div id="footer"></div>
